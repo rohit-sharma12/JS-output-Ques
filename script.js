@@ -126,4 +126,45 @@
 // console.log("C");
 // Promise.resolve().then(() => console.log("D"));    // Microtassk Queue have high Priority
 
-// ************** 11 **************
+
+//* Easy practise question **/
+
+// [1]
+
+// let a = 1;
+// sum = 0;
+// while (a <= 10) {
+//     sum = sum + a;
+//     a++;
+// }
+// console.log(sum);
+
+// let str = "JavaScript";
+
+// for (let charac of str) {
+//     console.log(charac);
+// }
+
+
+//let arr = [1, 2, 3];
+//arr[4] = 5;
+//console.log(arr.length);   //5
+//console.log(arr);          //[ 1, 2, 3, <1 empty item>, 5 ]
+
+
+//We need 40 element
+//const [, , , a] = [10, 20, 30, 40, 50];
+//console.log(a);
+
+// Now if we have big arr so ,
+
+const { 3: a } = [11, 22, 33, 42, 59];
+//console.log(a);               //here we use object
+
+
+/*  Q */
+function abc() {
+    //console.log("hii");
+}
+const value = new abc();     // new keyword create a new empty object
+//console.log(value);           // new is contructor function
