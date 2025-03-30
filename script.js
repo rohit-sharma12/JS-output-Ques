@@ -158,7 +158,7 @@
 
 // Now if we have big arr so ,
 
-const { 3: a } = [11, 22, 33, 42, 59];
+// const { 3: a } = [11, 22, 33, 42, 59];
 //console.log(a);               //here we use object
 
 
@@ -168,3 +168,97 @@ function abc() {
 }
 const value = new abc();     // new keyword create a new empty object
 //console.log(value);           // new is contructor function
+
+
+// var x = 20;
+
+// var fun = function () {
+//     console.log(x);
+//     var x = 21;
+// };
+
+// fun()
+
+// function mutilpy(num1, num2) {
+//     console.log(num1 * num2);
+// }
+// var arr = [6, 6]
+// mutilpy(...arr);
+
+//IIFE() 👍
+
+// const fn = (a, x, y, ...numbers) => {
+//     console.log(a, x, y, numbers);
+// }
+// fn(2, 3, 4, 5,5)
+
+
+//Closures 👍
+
+// let count = 0;
+// (function printCount() {
+//     if (count === 0) {
+//         let count = 1;         //let shadow the count = 0 (shadowing)
+//         console.log(count);
+//     }
+//     console.log(count);
+// })();
+
+
+// function a() {
+//     for (var i = 0; i < 3; i++) {           //using var
+//         function num(i) {
+//             setTimeout(function log() {
+//                 console.log(i);
+//             }, i * 1000);
+//         }
+//        num(i);
+//     }
+// }
+// a();
+
+//Make this run only once 👍
+// let view;
+// function likeVideo() {
+//     let called = 0;
+
+//     return function () {
+//         if (called > 0) {
+//             console.log('Alredy Suscribe');
+//         } else {
+//             view = 'Rohit Sharma'
+//             console.log('Suscribe to ', view);
+//             called++;
+//         }
+//     };
+// }
+// let isSuscribed = likeVideo()
+
+// isSuscribed()
+// isSuscribed()
+// isSuscribed()
+
+
+//Curring 👍
+
+//sum(4)(5)(5)
+
+// function sum(a) {
+//     return function (b) {
+//         return function (c) {
+//             return a + b + c;
+//         };
+//     };
+// };
+// console.log(sum(4)(5)(5));
+
+//Infinite currring -> sum(1)(2)(3)....(n)
+
+// function add(a) {
+//     return function (b) {
+//         if (b) return add(a + b);
+//         return a;
+//     }
+// }
+// console.log(add(5)(2)(4)(8)());
+
